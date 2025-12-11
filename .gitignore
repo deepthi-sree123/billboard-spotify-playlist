@@ -1,0 +1,5 @@
+token.txt
+.cache
+__pycache__/
+.env
+.idea/
