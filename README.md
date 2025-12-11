@@ -1,50 +1,29 @@
-🎵 Billboard to Spotify Playlist
+<!-- README.md -->
+<h1 align="center">🎵 Billboard → Spotify Playlist</h1>
 
-A Python script that takes any date (YYYY-MM-DD), scrapes the Billboard Hot 100 chart for that day, and automatically creates a private Spotify playlist with the available songs.
+<p align="center">
+  This project is a Python automation tool that takes any date in the format YYYY-MM-DD, scrapes the Billboard Hot 100 chart for that day, and automatically creates a private Spotify playlist with the available songs. It uses web scraping to collect track names from Billboard.com, then connects to the Spotify Web API via Spotipy to search for each song and add it to a newly created playlist in the user’s account. The result is a fast and seamless way to recreate nostalgic or historical music charts as Spotify playlists with a single command.
+</p>
 
-🚀 How It Works
+---
 
-Enter a date
+## ✨ Quick overview
+- Enter a date (YYYY-MM-DD).  
+- Script scrapes the Billboard Hot 100 for that date.  
+- Searches Spotify for each track, creates a private playlist, and adds the found songs.  
+- Perfect for nostalgia trips and making curated throwback playlists.
 
-Script scrapes Billboard for the top 100 songs
+---
 
-Authenticates with Spotify using Spotipy
+## 🚀 Quick start
 
-Searches each song on Spotify
+```bash
+# clone
+git clone https://github.com/deepthi-sree123/billboard-spotify-playlist.git
+cd billboard-spotify-playlist
 
-Creates a playlist in your account and adds the songs
-
-🛠 Requirements
-
-Python 3
-
-requests
-
-beautifulsoup4
-
-spotipy
-
-Install:
-
+# install
 pip install requests beautifulsoup4 spotipy
 
-🔐 Setup
-
-Set your Spotify credentials as environment variables in PyCharm:
-
-CLIENT_ID=your_spotify_client_id
-CLIENT_SECRET=your_spotify_client_secret
-
-
-Redirect URI used:
-
-https://127.0.0.1:8888/callback
-
-▶ Run
+# run
 python main.py
-
-📌 Notes
-
-Playlist is private
-
-Some songs may not be available on Spotify
